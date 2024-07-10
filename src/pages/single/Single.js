@@ -1,9 +1,26 @@
 import "./single.scss";
+import  Sidebar from "../../components/sidebar/Sidebar";
+import Navbar from "../../components/navbar/Navbar";
 
 const Single = () => {
   return (
-    <div>
-      single
+    <div className="single">
+      <Sidebar/>
+      <div className="singleContainer">
+        <Navbar/>
+       <div className="top">
+        <div className="left">
+          <div className="editButton">Edit</div>
+          <h1 className="title">Information</h1>
+          <div className="item">
+            <img src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="itemimg" />
+            details
+          </div>
+        </div>
+       </div>
+       <div className="bottom"></div>
+      </div>
+     
     </div>
   )
 }
